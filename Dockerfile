@@ -10,8 +10,10 @@ RUN apk update \
         git \
         bash \
         openssh \
-        python
+        python \
+        tmux
 
 RUN npm install --unsafe-perm --global @openzeppelin/cli
+RUN npm install --unsafe-perm --global ganache-cli
 
 ENTRYPOINT ["/bin/bash"]

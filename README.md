@@ -3,5 +3,5 @@
 
 # Usage
 ```shell scripthis
-docker run -ti --rm --net=host -v $(pwd):/zos eastata/zos-cli 
+docker run -ti --rm --net=host -v $(pwd):/zos eastata/zos-cli:v0.0.2
 ```
