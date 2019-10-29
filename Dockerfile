@@ -14,8 +14,6 @@ RUN apk update \
         tmux \
         jq
 
-RUN npm install --unsafe-perm --global @openzeppelin/cli
-RUN npm install --unsafe-perm --global ganache-cli
-RUN npm install --unsafe-perm --global web3
+RUN npm install --unsafe-perm --global @openzeppelin/cli ganache-cli web3 truffle-privatekey-provider
 
 ENTRYPOINT ["/bin/bash"]

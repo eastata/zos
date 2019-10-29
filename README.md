@@ -3,5 +3,10 @@
 
 # Usage
 ```shell scripthis
-docker run -ti --rm --net=host -v $(pwd):/zos eastata/zos-cli:v0.0.3
+docker run -ti --rm --net=host -v $(pwd):/zos eastata/zos-cli:v0.0.4
+```
+
+to use global `truffle-privatekey-provider`
+```
+npm link truffle-privatekey-provider
 ```
