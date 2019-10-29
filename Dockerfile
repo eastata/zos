@@ -11,9 +11,11 @@ RUN apk update \
         bash \
         openssh \
         python \
-        tmux
+        tmux \
+        jq
 
 RUN npm install --unsafe-perm --global @openzeppelin/cli
 RUN npm install --unsafe-perm --global ganache-cli
+RUN npm install --unsafe-perm --global web3
 
 ENTRYPOINT ["/bin/bash"]
